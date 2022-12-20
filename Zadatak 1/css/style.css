@@ -1,0 +1,121 @@
+body {
+    background-color: #FFDE59;
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+	color: #FFF;
+	font-weight: bold;
+    margin-left: 0px;
+	text-align: left;
+	width: auto;
+    padding-bottom: 5px;
+}
+h1 span {
+	background-color: #98BF21;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+.field-group, .button-group, .result-group {
+    background-color: #98BF21;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	padding: 15px;
+	position: relative;
+    top: 60px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    max-width: max-content;
+    max-width: -moz-max-content;
+    display: flex;
+    align-items: center;
+}
+.field-group label{
+    margin-right: 15px;
+}
+.field-group .text{
+    border: 1px solid #98BF21;
+    border-radius: 5px;
+    font-family: Arial;
+    padding: 10px;
+    font-size: 16px;
+}
+.field-group .text:focus{
+    border: 1px solid #222;
+    outline: none;
+}
+.button-group{
+    background-color: transparent;
+    padding: 0px;
+}
+.result-group{
+    background-color: transparent;
+    max-width: unset;
+    font-family: consolas;
+    font-weight: normal;
+    font-weight: normal;
+    width: 523px;
+    padding: 0;
+}
+.submit-button {
+    background-color: #98BF21;
+	color:#fff;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 10px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: #829a39;
+}
+.submit-button:disabled{
+    background-color:#d0d0bb;
+}  
+#error{
+    font-size: 12px;
+    color: red;
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 230px;
+} 
+input{
+    font-size: 24px;
+    padding: 5px 15px;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
+}           
+/*Standard*/
+.animate {
+	position: absolute;
+	/*animation-timing-function: ease;	*/
+    animation: mymove 2s 1 ease forwards;
+    -webkit-animation: mymove 2s 1 ease forwards;
+	/*animation: mymove 2s 1 ease-in-out;*/
+}
+/*Standard*/
+@keyframes mymove {
+    from {
+    	 transform: translateX(-190px);
+    }
+    to {
+         transform: translateX(0px);
+    }
+}
+/*Chrome, Safari*/
+@-webkit-keyframes mymove {
+    from {left: -190px;}
+    to {left: 0px;}
+}
+#rezultat{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
