@@ -1,7 +1,7 @@
 var tekst = document.getElementsByClassName('text')[0];
 var rezultat = document.getElementById("rezultat");
 var word_counter = 1;
-var samog_counter = 1;
+var samog_counter = 0;
 var tekst_val = '';
 
 tekst.addEventListener('keypress', function(e){
